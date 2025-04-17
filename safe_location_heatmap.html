@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_de89c0531c12dc62163b364048f97406 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+     <div style="position: fixed; top: 10px; width: 100%; text-align: center; z-index:9999;">
+         <h3 style="font-size:22px; color:green; background-color: white; display: inline-block; padding: 5px 15px; border-radius: 8px;">
+         <b>Safety Locations</b></h3>
+     </div>
+    
+            <div class="folium-map" id="map_de89c0531c12dc62163b364048f97406" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_de89c0531c12dc62163b364048f97406 = L.map(
+                "map_de89c0531c12dc62163b364048f97406",
+                {
+                    center: [13.06085, 80.25902500000001],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_48d44c8c03cd6b93e39f7ea5d37d0b40 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_48d44c8c03cd6b93e39f7ea5d37d0b40.addTo(map_de89c0531c12dc62163b364048f97406);
+        
+    
+            var circle_marker_a4fff2d2bdecd574ec485848fbaf7889 = L.circleMarker(
+                [13.0827, 80.2707],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_de89c0531c12dc62163b364048f97406);
+        
+    
+        var popup_2bd8987fdb2ec68264b0f9f5fb0f5996 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b20ca9602d3cfb5e282d37ba6036317 = $(`<div id="html_7b20ca9602d3cfb5e282d37ba6036317" style="width: 100.0%; height: 100.0%;">Location: Park Street<br>Safety Level: High</div>`)[0];
+                popup_2bd8987fdb2ec68264b0f9f5fb0f5996.setContent(html_7b20ca9602d3cfb5e282d37ba6036317);
+            
+        
+
+        circle_marker_a4fff2d2bdecd574ec485848fbaf7889.bindPopup(popup_2bd8987fdb2ec68264b0f9f5fb0f5996)
+        ;
+
+        
+    
+    
+            var circle_marker_823c3f6f720a6bbcbb1b123eff967f2e = L.circleMarker(
+                [13.035, 80.2315],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_de89c0531c12dc62163b364048f97406);
+        
+    
+        var popup_ad9f8942f25bb907e1ef710e12227d9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99ee40225d5c829fedcbc4d0d5af1df6 = $(`<div id="html_99ee40225d5c829fedcbc4d0d5af1df6" style="width: 100.0%; height: 100.0%;">Location: Library Road<br>Safety Level: High</div>`)[0];
+                popup_ad9f8942f25bb907e1ef710e12227d9e.setContent(html_99ee40225d5c829fedcbc4d0d5af1df6);
+            
+        
+
+        circle_marker_823c3f6f720a6bbcbb1b123eff967f2e.bindPopup(popup_ad9f8942f25bb907e1ef710e12227d9e)
+        ;
+
+        
+    
+    
+            var circle_marker_63b95eaa195b453a582a5880bf14d333 = L.circleMarker(
+                [13.0455, 80.2502],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_de89c0531c12dc62163b364048f97406);
+        
+    
+        var popup_6b764d282173413bfdb6e986d423dea4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_658a6953b64bcdf6fae322d3398178f0 = $(`<div id="html_658a6953b64bcdf6fae322d3398178f0" style="width: 100.0%; height: 100.0%;">Location: Greenway<br>Safety Level: Moderate</div>`)[0];
+                popup_6b764d282173413bfdb6e986d423dea4.setContent(html_658a6953b64bcdf6fae322d3398178f0);
+            
+        
+
+        circle_marker_63b95eaa195b453a582a5880bf14d333.bindPopup(popup_6b764d282173413bfdb6e986d423dea4)
+        ;
+
+        
+    
+    
+            var circle_marker_5d5ccadc1f3e76bdbb3e8b8027318c2a = L.circleMarker(
+                [13.0802, 80.2837],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_de89c0531c12dc62163b364048f97406);
+        
+    
+        var popup_3f8b4d2c8ad65b7fcf8e71a9cf272d6b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb30833481a38e34e230d50a1c08a5bd = $(`<div id="html_fb30833481a38e34e230d50a1c08a5bd" style="width: 100.0%; height: 100.0%;">Location: Sunset Blvd<br>Safety Level: High</div>`)[0];
+                popup_3f8b4d2c8ad65b7fcf8e71a9cf272d6b.setContent(html_fb30833481a38e34e230d50a1c08a5bd);
+            
+        
+
+        circle_marker_5d5ccadc1f3e76bdbb3e8b8027318c2a.bindPopup(popup_3f8b4d2c8ad65b7fcf8e71a9cf272d6b)
+        ;
+
+        
+    
+    
+            var heat_map_2e911e2e137e074ad32f2ee2de32ced9 = L.heatLayer(
+                [[13.0827, 80.2707], [13.035, 80.2315], [13.0455, 80.2502], [13.0802, 80.2837]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+  "gradient": {
+  "0.4": "green",
+  "0.65": "lime",
+  "1": "lightgreen",
+},
+}
+            );
+        
+    
+            heat_map_2e911e2e137e074ad32f2ee2de32ced9.addTo(map_de89c0531c12dc62163b364048f97406);
+        
+</script>
+</html>
